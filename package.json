@@ -1,0 +1,31 @@
+{
+  "name": "ssl-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for creating and managing SSL certificates",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "ssl-cli": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ssl",
+    "certificate",
+    "cli",
+    "https",
+    "local-development"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "chalk-animation": "^2.0.3",
+    "commander": "^11.1.0",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^9.2.12",
+    "nanospinner": "^1.1.0"
+  }
+}
