@@ -1,5 +1,5 @@
 {
-  "name": "ssl-cli",
+  "name": "@krish-59/ssl-cli",
   "version": "1.0.0",
   "description": "CLI tool for creating and managing SSL certificates",
   "main": "index.js",
@@ -15,10 +15,20 @@
     "certificate",
     "cli",
     "https",
-    "local-development"
+    "local-development",
+    "nginx",
+    "letsencrypt"
   ],
-  "author": "",
+  "author": "Vamsi Krishna Yenumula <vamsi.49krishna@gmail.com>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krish-59/SSL-CLI.git"
+  },
+  "homepage": "https://github.com/krish-59/SSL-CLI#readme",
+  "bugs": {
+    "url": "https://github.com/krish-59/SSL-CLI/issues"
+  },
   "dependencies": {
     "chalk": "^5.3.0",
     "chalk-animation": "^2.0.3",
