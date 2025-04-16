@@ -13,12 +13,27 @@ A powerful command-line tool for managing SSL certificates, both for local devel
 
 ## Installation
 
+### Using npm (Global Installation)
 ```bash
-# Install globally
-npm install -g ssl-cli
+npm install -g @krish-59/ssl-cli
+```
 
-# Or install locally
-npm install ssl-cli
+### Using npx (No Installation Required)
+```bash
+npx @krish-59/ssl-cli <command>
+```
+
+### Local Development Setup
+```bash
+# Clone the repository
+git clone https://github.com/krish-59/SSL-CLI.git
+cd SSL-CLI
+
+# Install dependencies
+npm install
+
+# Link the package for development
+npm link
 ```
 
 ## Prerequisites
@@ -32,7 +47,7 @@ npm install ssl-cli
 
 ### 1. Basic Help Command
 ```bash
-ssl-cli --help
+@krish-59/ssl-cli --help
 ```
 - Shows all available commands and their descriptions
 - Provides basic usage information
@@ -40,7 +55,7 @@ ssl-cli --help
 
 ### 2. OpenSSL Check Command
 ```bash
-ssl-cli check-openssl
+@krish-59/ssl-cli check-openssl
 ```
 - Verifies if OpenSSL is installed on your system
 - Checks if OpenSSL is properly configured in PATH
@@ -49,7 +64,7 @@ ssl-cli check-openssl
 
 ### 3. Local CA Creation Command
 ```bash
-ssl-cli create-local-ca
+@krish-59/ssl-cli create-local-ca
 ```
 - Creates a local Certificate Authority (CA) for development
 - Generates a CA private key (`myCA.key`)
@@ -64,7 +79,7 @@ ssl-cli create-local-ca
 
 ### 4. Domain Certificate Creation Command
 ```bash
-ssl-cli create-cert
+@krish-59/ssl-cli create-cert
 ```
 - Creates SSL certificates for specific domains
 - Generates certificates signed by your local CA
@@ -82,7 +97,7 @@ ssl-cli create-cert
 
 ### 5. Nginx SSL Setup Command
 ```bash
-ssl-cli setup-nginx
+@krish-59/ssl-cli setup-nginx
 ```
 - Sets up Nginx with Let's Encrypt certificates
 - Features:
@@ -104,24 +119,24 @@ ssl-cli setup-nginx
 ### Local Development Setup
 ```bash
 # 1. Create local CA
-ssl-cli create-local-ca
+@krish-59/ssl-cli create-local-ca
 
 # 2. Install CA certificate in your system/browser
 
 # 3. Create certificates for your domains
-ssl-cli create-cert
+@krish-59/ssl-cli create-cert
 ```
 
 ### Production Setup
 ```bash
 # Set up Nginx with Let's Encrypt
-ssl-cli setup-nginx
+@krish-59/ssl-cli setup-nginx
 ```
 
 ### Troubleshooting
 ```bash
 # Check OpenSSL installation
-ssl-cli check-openssl
+@krish-59/ssl-cli check-openssl
 ```
 
 ## Features in Detail
@@ -166,4 +181,11 @@ ISC
 
 ## Support
 
-For support, please open an issue in the GitHub repository. 
+For support, please open an issue in the GitHub repository.
+
+## Package Information
+
+- **npm Package**: [@krish-59/ssl-cli](https://www.npmjs.com/package/@krish-59/ssl-cli)
+- **GitHub Repository**: [krish-59/SSL-CLI](https://github.com/krish-59/SSL-CLI)
+- **Author**: Vamsi Krishna Yenumula
+- **Version**: 1.0.0 
